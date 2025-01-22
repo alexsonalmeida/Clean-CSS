@@ -1,5 +1,5 @@
 import { menuItems } from "@/utils/NavigationComponents";
-import { ArrowRight, ChevronDown, ChevronRight, Menu } from "lucide-react";
+import { ArrowLeft, ChevronDown, ChevronRight, Menu } from "lucide-react";
 import { useState } from "react";
 
 type MenuMobileProps = {
@@ -25,15 +25,15 @@ export function MenuMobile({className}: MenuMobileProps) {
                 <Menu size={22} className="text-gray-600" />
             </button>
             <div 
-                className={`bg-gray-100 absolute top-0 right-0 space-y-3.5 md:relative md:flex md:items-center md:bg-transparent md:top-auto 
-                    md:right-auto shadow-md md:shadow-none rounded-md px-9 py-5 md:p-0 md:w-auto z-10 ${isOpen ? "block" : "hidden"} md:block`
+                className={`bg-gray-100 absolute top-0 left-0 space-y-3.5 md:relative md:flex md:items-center md:bg-transparent md:top-auto 
+                    md:left-auto shadow-md md:shadow-none rounded-md px-9 py-5 md:p-0 md:w-auto z-10 ${isOpen ? "block" : "hidden"} md:block`
                 }
             >
                 <button 
                     className="bg-gray-200 p-1.5 rounded-md"
                     onClick={() => setIsOpen(false)}
                 >
-                    <ArrowRight size={22} className="text-gray-500"/>
+                    <ArrowLeft size={22} className="text-gray-500"/>
                 </button>
                 <ul className="space-y-6">
                     {menuItems.map((item) => (

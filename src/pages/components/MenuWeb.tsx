@@ -1,5 +1,5 @@
-import { menuItems } from "@/utils/NavigationComponents";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "../ui/navigation-menu";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu"
+import { menuItems } from "@/utils/NavigationComponents"
 
 type MenuWebProps = {
     className?: String
@@ -23,7 +23,7 @@ export function MenuWeb({ className }: MenuWebProps) {
                                             <li key={childIndex}>
                                                 <NavigationMenuLink asChild>
                                                     <a 
-                                                        href={`${item.paths[childIndex]}`}
+                                                        href={`/articles/${item.paths[childIndex]}`}
                                                         className="text-gray-700 hover:text-slate-500 font-regular text-sm transition-colors"
                                                     >
                                                         {child}

@@ -13,6 +13,9 @@ export default {
 		fontFamily: {
 			sans: ['Inter var', 'sans-serif'],
 		},
+		fontSize: {
+			'2xs': '10px',
+		},
 	
   	}
   },
