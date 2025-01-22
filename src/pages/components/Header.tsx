@@ -8,7 +8,7 @@ type HeaderProps = {
 
 const Header = ({className}: HeaderProps) => {
     return (
-      <header className={`bg-gray-100 md:bg-transparent md:border-b border-gray-200 p-4 md:flex items-center justify-between ${className || ""}`}>
+      <header className={`bg-gray-100 fixed top-0 w-full z-10 md:bg-gray-50 md:border-b border-gray-200 p-4 md:flex items-center justify-between ${className || ""}`}>
         <div className="flex justify-between border-b md:border-0 border-gray-200 pb-3 md:pb-0">
             <a href="/">
               <img src="/assets/logo.svg" alt="Clean CSS Logo" className="max-w-20 md:max-w-32"/>
