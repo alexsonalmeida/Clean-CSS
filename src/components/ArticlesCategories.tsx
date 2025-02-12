@@ -14,7 +14,16 @@ function CommonErrors() {
     )
 }
 
+function Components() {
+    return (
+        <span className="text-green-50 bg-green-500 rounded-full text-medium text-2xs md:text-xs px-3 py-2 md:px-3 md:py-2">
+            Components
+        </span>
+    )
+}
+
 export {
     GoodPractices,
-    CommonErrors
+    CommonErrors,
+    Components
 }

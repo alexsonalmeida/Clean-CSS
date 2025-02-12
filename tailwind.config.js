@@ -16,7 +16,6 @@ export default {
 		fontSize: {
 			'2xs': '10px',
 		},
-	
   	}
   },
   plugins: [require("tailwindcss-animate")],
