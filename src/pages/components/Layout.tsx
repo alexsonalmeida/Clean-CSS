@@ -5,7 +5,7 @@ import Footer from '@/components/landing/Footer';
 
 export default function MainLayout() {
   return (
-    <div className="flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col bg-gray-50 min-h-screen">
       <Header/>
       <div className="h-28 md:h-16"/>
       <div className="flex flex-1">
@@ -14,7 +14,7 @@ export default function MainLayout() {
           <Outlet/>
         </main>
       </div>
-      <div className='flex flex-1'>
+      <div className="flex">
         <div className="w-0 md:w-64"/>
         <Footer/>
       </div>
